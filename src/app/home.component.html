@@ -1,0 +1,80 @@
+<!-- SLIDER -->
+    <section class="navSlider">
+
+        <div class="items">
+            <div class="item">
+                <img width="100%" src="assets/img/birds.gif"/>
+            </div>
+        </div>
+
+        <div class="controls ">
+
+            <ul>
+                <li><a class="ellipse"></a></li>
+                <li><a class="ellipse"></a></li>
+                <li><a class="ellipse"></a></li>
+                <li><a class="ellipse"></a></li>
+                <li><a class="ellipse"></a></li>
+                <li><a class="ellipse active"></a></li>
+            </ul>
+        </div>
+
+    </section>
+    <!-- /SLIDER -->
+
+
+    <!-- Articles -->
+
+
+    <section class="container-fluid">
+        <h2>Actualités</h2>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" *ngFor="let actualite of actualites | myfilter:false"
+             [class.selected]="actualite === selectedActualite"
+             (click)="onSelect(actualite)" [routerLink]="['/detail', actualite.id]" >
+            <img src="{{actualite.image}}"  class=Rect />
+
+            <div class="post-content">
+                <div class=Title>{{actualite.title}}</div>
+                <div class=textCell>{{actualite.text}}</div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- /Articles -->
+    <br><br>
+    <!-- Temoignages -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="Cercle"></div>
+                <div class="post-content2 ">
+                    <div class="Title">
+                        Title Goes Here
+                    </div>
+                    <div class="textCell2">
+                        Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede
+                        estibulum nulla orna nisl velit elit ac aliquat non tincidunt.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="Cercle"></div>
+                <div class="post-content2">
+                    <div class="Title">
+                        Title Goes Here
+                    </div>
+                    <div class="textCell2">
+                        Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede
+                        estibulum nulla orna nisl velit elit ac aliquat non tincidunt.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Articles -->
+    </section>
+    <br>
+
+
