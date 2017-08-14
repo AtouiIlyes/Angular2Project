@@ -1,7 +1,7 @@
 export class Actualite {
-  id: number;
+  id: string;
   title: string;
-  text: string;
+  textA: string;
   archived : boolean;
   image : string;
 }

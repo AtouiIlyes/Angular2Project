@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
-
+import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ActualiteDetailComponent } from './actualite-detail.component';
@@ -10,7 +10,7 @@ import { ActualiteService } from  './actualite.service';
 import { AppRoutingModule }     from './app-routing.module';
 import {ArchivedComponent} from "./archived.component";
 import {HomeComponent} from "./home.component";
-
+import {EmitterService} from "./emitter.service";
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +23,9 @@ import {HomeComponent} from "./home.component";
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule,
+    JsonpModule
 
   ],
   providers: [ActualiteService],

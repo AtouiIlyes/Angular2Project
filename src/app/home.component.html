@@ -29,14 +29,14 @@
     <section class="container-fluid">
         <h2>Actualités</h2>
 
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" *ngFor="let actualite of actualites | myfilter:false"
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" *ngFor="let actualite of actualites   | myfilter:false"
              [class.selected]="actualite === selectedActualite"
-             (click)="onSelect(actualite)" [routerLink]="['/detail', actualite.id]" >
+             (click)="onSelect(actualite)"  [routerLink]="['/detail',actualite._id]">
             <img src="{{actualite.image}}"  class=Rect />
 
             <div class="post-content">
                 <div class=Title>{{actualite.title}}</div>
-                <div class=textCell>{{actualite.text}}</div>
+                <div class=textCell>{{actualite.textA}}</div>
             </div>
         </div>
 

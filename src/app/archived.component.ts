@@ -21,8 +21,14 @@ export class ArchivedComponent implements OnInit {
         private actualiteService: ActualiteService) { }
 
     getActualites(): void {
-        this.actualiteService.getActualites().then(actualites => this.actualites = actualites);
-    }
+        this.actualiteService.getActualites()
+            .subscribe(
+                actualites => this.actualites = actualites, //Bind to view
+                err => {
+                    // Log errors if any
+                    console.log(err);
+                });    }
+
 
     ngOnInit(): void {
         this.getActualites();
