@@ -7,17 +7,22 @@ import { AppComponent } from './app.component';
 import { ActualiteDetailComponent } from './actualite-detail.component';
 import { MyFilterPipe } from './my-filter';
 import { ActualiteService } from  './actualite.service';
+import {ContactService} from "./contact.service";
 import { AppRoutingModule }     from './app-routing.module';
 import {ArchivedComponent} from "./archived.component";
 import {HomeComponent} from "./home.component";
-import {EmitterService} from "./emitter.service";
+import {FeaturedFilterPipe} from "./filter-featured";
+import {ContactComponent} from "./contact.component";
+
 @NgModule({
   declarations: [
     AppComponent,
     ActualiteDetailComponent,
     ArchivedComponent,
     MyFilterPipe,
-    HomeComponent  
+    FeaturedFilterPipe,
+    HomeComponent,
+    ContactComponent
 
   ],
   imports: [
@@ -28,7 +33,7 @@ import {EmitterService} from "./emitter.service";
     JsonpModule
 
   ],
-  providers: [ActualiteService],
+  providers: [ActualiteService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

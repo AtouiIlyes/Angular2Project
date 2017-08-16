@@ -3,5 +3,6 @@ export class Actualite {
   title: string;
   textA: string;
   archived : boolean;
+  featured : boolean;
   image : string;
 }
