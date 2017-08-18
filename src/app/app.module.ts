@@ -13,6 +13,8 @@ import {ArchivedComponent} from "./archived.component";
 import {HomeComponent} from "./home.component";
 import {FeaturedFilterPipe} from "./filter-featured";
 import {ContactComponent} from "./contact.component";
+import {MenuList} from "./menu/menu.component";
+import {MenuService} from "./menu/menu.service";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import {ContactComponent} from "./contact.component";
     MyFilterPipe,
     FeaturedFilterPipe,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    MenuList  
 
   ],
   imports: [
@@ -33,7 +36,7 @@ import {ContactComponent} from "./contact.component";
     JsonpModule
 
   ],
-  providers: [ActualiteService, ContactService],
+  providers: [ActualiteService, ContactService, MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
