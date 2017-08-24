@@ -8,15 +8,13 @@ import {HomeComponent} from "./home.component";
 import {ActualiteDetailComponent} from "./actualite-detail.component";
 import {ContactComponent} from "./contact.component";
 import {MenuList} from "./menu/menu.component";
+import {PageComponent} from "./page/page.component";
 
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'archived',  component: ArchivedComponent },
-    { path: 'home',  component: HomeComponent },
-    { path: 'menu',  component: MenuList },
-    { path: 'detail/:id', component: ActualiteDetailComponent },
-    { path: 'contact',  component: ContactComponent },
+    { path: ':alias', component: PageComponent }
+
 
 ];
 
