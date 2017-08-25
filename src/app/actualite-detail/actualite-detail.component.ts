@@ -5,8 +5,8 @@ import 'rxjs/add/operator/switchMap';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location }                 from '@angular/common';
-import { Actualite }         from './actualite';
-import { ActualiteService }  from './actualite.service';
+import {ActualiteService} from "../actualite.service";
+import {Actualite} from "../actualite";
 @Component({
     selector: 'actualite-detail',
     templateUrl: './actualite-detail.component.html',

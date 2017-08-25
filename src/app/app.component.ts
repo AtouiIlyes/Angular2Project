@@ -5,6 +5,7 @@ import {Component } from '@angular/core';
   template: `
     <menu-list></menu-list>
     <hr>
+    <router-outlet>...</router-outlet>
 `
 
 })

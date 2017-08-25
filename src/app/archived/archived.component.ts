@@ -2,9 +2,9 @@
  * Created by atoui on 24/07/2017.
  */
 import { Component, OnInit } from '@angular/core';
-import { ActualiteService } from './actualite.service';
-import {Actualite} from "./actualite";
 import { Router } from '@angular/router';
+import {ActualiteService} from "../actualite.service";
+import {Actualite} from "../actualite";
 
 
 @Component({

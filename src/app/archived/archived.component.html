@@ -8,7 +8,7 @@
 
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" *ngFor="let actualite of actualites   | myfilter:true"
          [class.selected]="actualite === selectedActualite"
-         (click)="onSelect(actualite)"  [routerLink]="['/detail', actualite._id]">
+         (click)="onSelect(actualite)"  [routerLink]="['/page/detail', actualite._id]">
         <img src="{{actualite.image}}"  class=Rect />
 
         <div class="post-content">

@@ -3,9 +3,9 @@
  */
 import {Input, Output, EventEmitter} from '@angular/core';
 import {Component, OnInit} from '@angular/core';
-import {ActualiteService} from './actualite.service';
-import {Actualite} from "./actualite";
 import {Router} from '@angular/router';
+import {Actualite} from "../actualite";
+import {ActualiteService} from "../actualite.service";
 
 
 @Component({

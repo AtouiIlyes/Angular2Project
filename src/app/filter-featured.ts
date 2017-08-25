@@ -13,5 +13,5 @@ export class FeaturedFilterPipe implements PipeTransform {
          return items;
          }*/
         // filter items array, items which match and return true will be kept, false will be filtered out
-        return items.filter(item => item.featured == value).slice(items.length - 3,items.length);    }
+        return items.filter(item => item.featured == value).slice(items.length - 6,items.length);    }
 }
